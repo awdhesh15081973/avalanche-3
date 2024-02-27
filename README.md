@@ -1,22 +1,25 @@
-# AwdeshKumar Token Smart Contract
+# Superman Token
 
-## Overview
-
-The AwdeshKumar Token Smart Contract is an ERC-20 token named "AwdeshKumar" with the symbol "AWD". It extends the functionality of the OpenZeppelin ERC20 and ERC20Burnable contracts. The initial token supply is minted to the contract deployer during deployment.
+Superman Token is an ERC-20 token contract written in Solidity. It extends OpenZeppelin's ERC20 and ERC20Burnable contracts and includes Ownable functionality.
 
 ## Features
 
-1. **Minting (`mint` function):**
-   - The contract provides a `mint` function that allows the owner to mint new tokens and allocate them to a specified address.
-   - The `mint` function takes the recipient's address (`addr`) and the amount of tokens to mint (`amt`) as parameters.
-   - The function can be used by the owner to increase the token supply.
+- **ERC-20 Compatibility:** The contract implements the ERC-20 standard with essential functions like `transfer`, `approve`, and `balanceOf`.
 
-2. **Burning (`burn` function):**
-   - The contract provides a `burn` function that allows the owner to burn a specified amount of tokens from a given address.
-   - The `burn` function takes the target address (`addr`) and the amount of tokens to burn (`amt`) as parameters.
-   - The function can be used by the owner to decrease the token supply.
+- **Burn Functionality:** Utilizes the `ERC20Burnable` contract, allowing token holders to burn their own tokens.
 
-## Token Deployment
+- **Ownership Control:** Inherits from the `Ownable` contract, providing the ability to designate an owner with exclusive control over certain functions.
 
-The contract is deployed with an initial supply of AwdeshKumar tokens to the address of the deployer. The initial supply is set to 2 times 10 to the power of the token's decimals.
+- **Minting:** Includes a `mint` function that allows the owner to mint new tokens for designated addresses.
+
+## Overview
+
+This token contract represents the Superman token with the symbol "Clark" and the name "Superman." It includes the ability to mint new tokens, burn existing tokens, and is owned by a designated address.
+
+## Dependencies
+
+This project relies on the following OpenZeppelin contracts:
+- ERC20 (from `@openzeppelin/contracts@5.0.1/token/ERC20/ERC20.sol`)
+- ERC20Burnable (from `@openzeppelin/contracts@5.0.1/token/ERC20/extensions/ERC20Burnable.sol`)
+- Ownable (from `@openzeppelin/contracts@5.0.1/access/Ownable.sol`)
 
