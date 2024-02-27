@@ -5,9 +5,9 @@ import "@openzeppelin/contracts@5.0.1/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts@5.0.1/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts@5.0.1/access/Ownable.sol";
 
-contract SpiderMan is ERC20, ERC20Burnable, Ownable {
+contract Superman is ERC20, ERC20Burnable, Ownable {
     constructor(address initialOwner)
-        ERC20("SpiderMan", "Peter")
+        ERC20("Superman", "Clark")
         Ownable(initialOwner)
     {
         _mint(msg.sender,1 * 10 ** decimals());
